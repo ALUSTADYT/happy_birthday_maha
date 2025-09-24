@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Happy Birthday Maha Sohail | From M. Sohail">
+  <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
+  <meta name="github" content="https://github.com/Aoudumber-Bade">
   <title>Maha Sohail Birthday</title>
 
   <!-- External Styles -->
@@ -13,93 +14,178 @@
   <!-- Font Awesome -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    crossorigin="anonymous" />
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div id="wrapper">
-    <!-- Background Particles -->
-    <div class="stars"></div>
-
-    <!-- Header -->
-    <header>
-      <h1 class="birthday-title">🎉 Happy Birthday <span>Maha Sohail</span> 🎂</h1>
-      <p class="subtitle">From your love, M. Sohail ❤️</p>
-    </header>
+    <!-- Flags -->
+    <div class="flag__birthday">
+      <img src="./images/1.png" alt="Left Flag" width="350" class="flag__left">
+      <img src="./images/1.png" alt="Right Flag" width="350" class="flag__right">
+    </div>
 
     <!-- Main Content -->
-    <main class="content">
-      <!-- Left Section -->
-      <section class="left">
-        <div class="photo-card">
-          <img src="./images/unnamed.png" alt="Maha Sohail" class="profile-img">
-          <h2>Dear My Love Maha 💖</h2>
-          <p>Today is your special day, and I’m so lucky to celebrate it with you.</p>
+    <div class="content">
+      <div class="left">
+        <div class="title">
+          <h1 class="happy">
+            <span style="--t: 4s;">H</span>
+            <span style="--t: 4.2s;">a</span>
+            <span style="--t: 4.4s;">p</span>
+            <span style="--t: 4.6s;">p</span>
+            <span style="--t: 4.8s;">y</span>
+          </h1>
+          <h1 class="birthday">
+            <span style="--t: 5s;">B</span>
+            <span style="--t: 5.2s;">i</span>
+            <span style="--t: 5.4s;">r</span>
+            <span style="--t: 5.6s;">t</span>
+            <span style="--t: 5.8s;">h</span>
+            <span style="--t: 6s;">d</span>
+            <span style="--t: 6.2s;">a</span>
+            <span style="--t: 6.4s;">y</span>
+          </h1>
+          <div class="hat">
+            <img src="./images/hat.png" alt="Party Hat" width="130">
+          </div>
         </div>
-        <button id="btn__letter" class="open-letter-btn">
-          💌 Open Your Birthday Letter
-        </button>
-      </section>
+        <div class="date__of__birth">
+          <span></span>
+        </div>
+        <div class="btn">
+          <button id="btn__letter">
+            <div class="mail">
+              Click Here Maha <i class="fa-regular fa-envelope"></i>
+            </div>
+          </button>
+        </div>
+      </div>
 
       <!-- Right Section -->
-      <section class="right">
-        <div class="balloon balloon1"></div>
-        <div class="balloon balloon2"></div>
-        <div class="balloon balloon3"></div>
-        <div class="cake">
-          🎂
+      <div class="right">
+        <div class="box__account">
+          <div class="image">
+            <img src="./images/unnamed.png" alt="Maha Sohail">
+          </div>
+          <div class="name">
+            <i class="fa-solid fa-heart"></i>
+            <span>Dear My Love Maha</span>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="balloon_one">
+            <img width="100px" src="./images/balloon1.png" alt="Balloon 1">
+          </div>
+          <div class="balloon_two">
+            <img width="100px" src="./images/balloon2.png" alt="Balloon 2">
+          </div>
         </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-      <button onclick="toggleMusic()" class="music-btn">🎵 Play / Pause Song</button>
-      <audio id="bdaySong" loop>
-        <source src="happy-birthday.mp3" type="audio/mpeg">
-      </audio>
-    </footer>
-
-    <!-- Letter Popup -->
-    <div class="box__letter" id="letterPopup">
-      <div class="letter-card">
-        <span class="close">&times;</span>
-        <h2>To My Love Maha 💕</h2>
-        <p>
-    Today is your birthday, and I hope it is more special than every special moment I share with you. I am so happy I have a wonderful girl like you in my life.  
-        </p>
-        <p>
-          Happy Birthday Dear Maha Sohail! 🎂🎈🎁  
-          May your day be full of happiness, health, and love.  
-          Don’t be sad, always smile. You are my everything ❤️  
-        </p>
-        <p>With love, <br> <strong>M. Sohail</strong></p>
+        <!-- Circle Text -->
+        <div class="cricle">
+          <div class="text__cricle">
+            <span style="--i: 1;">h</span>
+            <span style="--i: 2;">a</span>
+            <span style="--i: 3;">p</span>
+            <span style="--i: 4;">p</span>
+            <span style="--i: 5;">y</span>
+            <span style="--i: 6;">-</span>
+            <span style="--i: 7;">b</span>
+            <span style="--i: 8;">i</span>
+            <span style="--i: 9;">r</span>
+            <span style="--i: 10;">t</span>
+            <span style="--i: 11;">h</span>
+            <span style="--i: 12;">d</span>
+            <span style="--i: 13;">a</span>
+            <span style="--i: 14;">y</span>
+            <span style="--i: 15;">-</span>
+          </div>
+          <i class="fa-solid fa-heart"></i>
+        </div>
       </div>
     </div>
+
+    <!-- Decorations -->
+    <div class="decorate_star star1" style="--t: 15s;"></div>
+    <div class="decorate_star star2" style="--t: 15.2s;"></div>
+    <div class="decorate_star star3" style="--t: 15.4s;"></div>
+    <div class="decorate_star star4" style="--t: 15.6s;"></div>
+    <div class="decorate_star star5" style="--t: 15.8s;"></div>
+
+    <div class="decorate_flower--one" style="--t: 15s;">
+      <img width="20" src="./images/decorate_flower.png" alt="Flower">
+    </div>
+    <div class="decorate_flower--two" style="--t: 15.3s;">
+      <img width="20" src="./images/decorate_flower.png" alt="Flower">
+    </div>
+    <div class="decorate_flower--three" style="--t: 15.6s;">
+      <img width="20" src="./images/decorate_flower.png" alt="Flower">
+    </div>
+
+    <div class="decorate_bottom">
+      <img src="./images/decorate.png" alt="Bottom Decoration" width="100">
+    </div>
+    <div class="smiley__icon">
+      <img src="./images/smiley_icon.png" alt="Smiley" width="100">
+    </div>
+
+    <!-- Birthday Mail Box -->
+    <div class="boxMail">
+      <i class="fa-solid fa-xmark"></i>
+      <div class="boxMail-container">
+        <div class="card1">
+          <div class="userImg">
+            <img src="images/unnamed.png" alt="Maha">
+          </div>
+          <h4 class="username">To: Maha 💖<span class="underline"></span></h4>
+          <h3>Happy Birthday</h3>
+          <div class="imageCute">
+            <img src="cute1.png" alt="Cute Image 1">
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card2-content">
+            <h3>To You!</h3>
+            <h2>
+              Happy birthday maha!
+        Today is your birthday, and I hope it is more special 
+        than every special moment I share with you. I am so
+        happy I have a wonderful girl like you in my life.  
+              Happy Birthday Dear friend MAHA SOHAIL!  
+              i love you, be happy 😌  
+              Love from M. Sohail ❤️
+            </h2>
+            <div class="imageCute2">
+              <img src="cute2.png" alt="Cute Image 2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden Letter Box (Fix for JS references) -->
+    <div class="box__letter" style="display:none;">
+      <div class="letter__border"></div>
+      <h2 class="title__letter"></h2>
+      <div class="text__letter"><p></p></div>
+      <img id="heart__letter" class="love__img" src="./images/heart.png" alt="Heart">
+      <img id="mewmew" src="./images/cute_cat.png" alt="Cute Cat">
+      <div class="close">Close</div>
+    </div>
+
   </div>
 
-  <!-- Scripts -->
-  <script>
-    // Letter Popup
-    const btnLetter = document.getElementById("btn__letter");
-    const popup = document.getElementById("letterPopup");
-    const closeBtn = document.querySelector(".close");
-
-    btnLetter.onclick = () => popup.style.display = "flex";
-    closeBtn.onclick = () => popup.style.display = "none";
-    window.onclick = (e) => { if (e.target == popup) popup.style.display = "none"; }
-
-    // Music Toggle
-    function toggleMusic() {
-      let song = document.getElementById("bdaySong");
-      song.paused ? song.play() : song.pause();
-    }
-  </script>
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
-
 </html>
